@@ -1,17 +1,6 @@
-// const btn = document.getElementById('menu-btn')
-// const nav = document.getElementById('menu')
-
-// btn.addEventListener('click', () => {
-//     btn.classList.toggle('open')
-//     nav.classList.toggle('flex')
-//     nav.classList.toggle('hidden')
-// })
-
-
-// country code package
+//country code package
 let input = document.querySelector("#phone");
 window.intlTelInput(input, {});
-
 // handle show or hide password
 const handleToggle = (e) => {
   const id = e.target.id.split("-")[1] * 1; // check for the id of the element invoking this function and and split the id at the hyphen (-), then select the first index of the split text and convert to number by multiplying by 1
@@ -46,6 +35,7 @@ const handleToggle = (e) => {
 
 // get elements
 const form = document.getElementById("form");
+console.log(form);
 
 // reusable error function
 const createError = (element, message) => {
